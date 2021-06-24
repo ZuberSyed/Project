@@ -5,6 +5,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>services</title>
         <link rel="stylesheet" href="style.css">
+        <style>
+            @media (max-width:900px){
+                .brandName{
+                    color:black;
+                }
+            }
+        </style>
     </head>
     <body>
              <!--container1-->
@@ -14,50 +21,63 @@
                         <!--header2-->
                     <div class="brand">
                         <!-- <img src="Images/logo.jpg" width="60px" height="30px" alt="" style="transform:invert(1);"> -->
-                        <a class="brandName" href="index.html"> Front-linetechnologies</a>
+                        <a class="brandName" href="index.html">Lorem Ipsum</a>
                         <!--/header2-->
                     </div>
                         <!--nav-->
                         <nav>
+                            <span class="openSlide">
+                                <a href="#" onclick="openSideMenu()">
+                                <img src="Images/menu.png" alt="menu" width="25px" height="25px" style="filter: invert(1);"/>
+                                </a>
+                                </span>
                             <!--ul-->
                             <ul>
                                 <li><a href="index.html">home</a></li>
-                                <li><a href="about.html">about us</a></li>
-                                <li class="main-dropdown"><a href="services.html" class="dropdown-btn">services</a>
-                                    <ul class="dropdown-content">
-                                      <li class="subdropdown1"><a href="#" class="subdropdown-btn1">infrastructure integration solutions</a>
-                                        <ul class="subdropdown-content1">
-                                          <li><a href="#">active implementation</a></li>
-                                          <li><a href="#">passive implementation</a></li>
-                                          <li><a>data center implementation</a></li>
-                                        </ul>
-                                      </li>
-                                      <li class="subdropdown2"><a href="#" class="subdropdown-btn2">consultancy services</a>
-                                        <ul class="subdropdown-content2">
-                                            <li><a href="#">cybersecurity</a></li>
-                                            <li><a href="#">SAP/oracle security</a></li>
-                                            <li><a href="#">SCADA security testing</a></li>
-                                            <li><a href="#">SOC managed services</a></li>
-                                            <li><a href="#">IOT security</a></li>
-                                            <li><a href="#">bug bounty</a></li>
-                                            <li><a href="#">cloud computing</a></li>
-                                          </ul>
-                                      </li>
-                                      <li class="subdropdown3"><a href="#" class="subdropdown-btn3">outsourcing services</a>
-                                        <ul class="subdropdown-content3">
-                                          <li><a href="#">it sourcing</a></li>
-                                        </ul>
-                                      </li>
-                                    </ul>
-                                  </li>
-                                <li><a href="careers.html">careers</a></li>
-                                <li><a href="contact.html" class="anchor-light">contact us</a></li>
+                        <li><a href="about.html">about us</a></li>
+                        <li class="main-dropdown"><a href="services.html" class="dropdown-btn">services</a>
+                            <ul class="dropdown-content">
+                              <li class="subdropdown1"><a href="#" class="subdropdown-btn1">infrastructure integration solutions</a>
+                                <ul class=" subdropdownContent subdropdown-content1">
+                                  <li><a href="#">active implementation</a></li>
+                                  <li><a href="#">passive implementation</a></li>
+                                  <li><a>data center implementation</a></li>
+                                </ul>
+                              </li>
+                              <li class="subdropdown2"><a href="#" class="subdropdown-btn2">consultancy services</a>
+                                <ul class="subdropdownContent subdropdown-content2">
+                                    <li><a href="#">cybersecurity</a></li>
+                                    <li><a href="#">SAP/oracle security</a></li>
+                                    <li><a href="#">SCADA security testing</a></li>
+                                    <li><a href="#">SOC managed services</a></li>
+                                    <li><a href="#">IOT security</a></li>
+                                    <li><a href="#">bug bounty</a></li>
+                                    <li><a href="#">cloud computing</a></li>
+                                  </ul>
+                              </li>
+                              <li class="subdropdown3"><a href="#" class="subdropdown-btn3">outsourcing services</a>
+                                <ul class=" subdropdownContent subdropdown-content3">
+                                  <li><a href="#">it sourcing</a></li>
+                                </ul>
+                              </li>
+                            </ul>
+                          </li>
+                        <li><a href="careers.html">careers</a></li>
+                        <li><a href="contact.html" class="anchor-light">contact us</a></li>
                              <!--/ul-->
                             </ul>
                             <!--/nav-->
                         </nav>
                     <!--/header-->
                 </header>
+                <div id="sideMenu" class="side-nav">
+                    <a href="#" id="closeSlide" class="close-btn" onclick="closeSideMenu()">&times;</a>
+                    <a href="index.html">home</a>
+                    <a href="about.html">about us</a>
+                    <a href="services.html">services </a>               
+                    <a href="careers.html">careers</a>
+                    <a href="contact.html">contact us</a>
+                </div>
             <div class="bg img2"></div>
             </div>
         <div class="container3">
@@ -138,5 +158,6 @@
         <li><a href="#"><img src="Images/instagram.png" alt="instagram-logo"></a></li>
             </ul>
         </footer>
+        <script src="script.js"></script>
     </body>
 </html>
